@@ -131,7 +131,7 @@ No installation or server setup is required.
 
 ## Future Goals
 ```
-- Improve encryption by adding AES, RSA , SHA, etc.
+-	Integration of asymmetric cryptography such as RSA, SHA-256, ECC, etc.
 - Adapt the system for CTF (Capture The Flag) challenge.
 - Support firect QR code scanning on mobile devices.
 ```
