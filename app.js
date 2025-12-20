@@ -2,7 +2,6 @@ const secretMsg = document.getElementById("secretMsg");
 const encPwd = document.getElementById("encPwd");
 const encPwdToggle = document.getElementById("encPwdToggle");
 const btnEncrypt = document.getElementById("btnEncrypt");
-const btnDownloadQr = document.getElementById("btnDownloadQr");
 const encStatus = document.getElementById("encStatus");
 const qrCanvas = document.getElementById("qrCanvas");
 const payloadOut = document.getElementById("payloadOut");
@@ -25,13 +24,6 @@ function togglePassword(input, btn) {
 
 encPwdToggle.addEventListener("click", () => togglePassword(encPwd, encPwdToggle));
 decPwdToggle.addEventListener("click", () => togglePassword(decPwd, decPwdToggle));
-
-btnDownloadQr.addEventListener("click", () => {
-  const a = document.createElement("a");
-  a.download = "secure_qr.png";
-  a.href = qrCanvas.toDataURL("image/png");
-  a.click();
-});
 
 btnEncrypt.addEventListener("click", async () => {
   try {
