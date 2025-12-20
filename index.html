@@ -32,7 +32,6 @@
 
       <div class="btn-row">
         <button id="btnEncrypt" class="btn" type="button">Encrypt &amp; Create QR</button>
-        <button id="btnDownloadQr" class="btn" type="button">Download QR PNG</button>
       </div>
 
       <div id="encStatus" class="status"></div>
@@ -79,12 +78,11 @@
       <p class="small">Encryption/decryption happens locally in your browser.</p>
     </footer>
   </main>
-
-  <!-- ✅ Use CDN libs (avoid your local /libs folder entirely) -->
+  <!-- Libraries -->
   <script src="./libs/qrcode.min.js"></script>
   <script src="./libs/jsQR.js"></script>
 
-  <!-- Your code -->
+  <!-- App Scripts -->
   <script src="./js/base64.js"></script>
   <script src="./js/password.js"></script>
   <script src="./js/crypto.js"></script>
